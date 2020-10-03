@@ -1,7 +1,7 @@
 console.log('Welcome to Magic Notes.')
 showNotes();
 
-//if user adds a note to a local storage
+
 let addBtn = document.getElementById('addBtn');
 addBtn.addEventListener('click', function (e) {
     let addTxt = document.getElementById('addTxt');
@@ -15,10 +15,10 @@ addBtn.addEventListener('click', function (e) {
     notesObj.push(addTxt.value);
     localStorage.setItem('notes', JSON.stringify(notesObj));
     addTxt.value = '';
-    //console.log(notesObj);
+    
     showNotes();
 });
-// function to show elements from localstorage.
+
 function showNotes() {
     let notes = localStorage.getItem('notes');
     if (notes == null) {
@@ -46,9 +46,8 @@ function showNotes() {
         notesElm.innerHTML = `Nothing to show! Use "Add Note" section above to add notes. `
     }
 }
-//function to delete a note
+
 function deleteNote(index) {
-    //console.log('I am deleting', index);
     let notes = localStorage.getItem('notes');
     if (notes == null) {
         notesObj = [];
@@ -65,7 +64,6 @@ function deleteNote(index) {
 search = document.getElementById('searchTxt');
 search.addEventListener('input', function () {
     let inputVal = search.value;
-    //console.log('Input event fired!', inputVal);
     let noteCards = document.getElementsByClassName('noteCard');
     Array.from(noteCards).forEach(function(element){
         let cardTxt = element.getElementsByTagName('p')[0].innerText;
@@ -75,14 +73,6 @@ search.addEventListener('input', function () {
         else{
             element.style.display = 'none';
         }
-        //console.log(cardTxt);
      });
     
 });
-/*
-further features:
-1. Add Title
-2. mark a note as important
-3. seprate a user
-4. sync and host to web server
-*/
