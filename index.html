@@ -8,6 +8,7 @@
     <link rel="shortcut icon" type="image" href="images/th.jpg">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -45,13 +46,13 @@
         <div class="card-body">
             <div class="form-group">
                 <h5 class="card-title">Add Title</h5>
-                <input type="text" class="form-control" id="addtitle" aria-describedby="title" placeholder="Enter title">
+                <input type="text" class="form-control" id="addtitle" aria-describedby="title" placeholder="Enter title" data-aos="fade-up" data-aos-duration="1500">
             </div>
             <h5 class="card-title">Add a note</h5>
             <div class="form-group">
-                <textarea id='addTxt' class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <textarea id='addTxt' class="form-control" id="exampleFormControlTextarea1" rows="3" data-aos="fade-up" data-aos-duration="1500"></textarea>
             </div>
-            <button class="btn btn-primary" id="addBtn">Add Note<button\>
+            <button class="btn btn-primary" id="addBtn" data-aos="fade-up" data-aos="1500">Add Note<button\>
         </div>
     </div>
 
@@ -61,7 +62,7 @@
     <div id="notes" class="row container-fluid"></div>
     <div class="card">
         <br>
-          <p class="card-text">Everyone Plz Follow my Twitter Account</p>
+          <p class="card-text" data-aos="fade-right" data-aos-duration="1500">Everyone Plz Follow my Twitter Account</p>
           <br>
           <a href="https://twitter.com/AllFather_Divya" class="btn btn-primary">Go to my Twitter Handle</a>
         </div>
@@ -79,6 +80,10 @@
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
     <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 </body>
 
 </html>
