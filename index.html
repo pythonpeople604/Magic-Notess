@@ -9,22 +9,15 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/96636cabbe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <style>
-        body {
-            font-family: fantasy;
-            background-color: lavender;
-            border-collapse: collapse;
-            font-variant:small-caps;
-            flex-direction: column;
-        }
-    </style>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">Homes <span class="sr-only">(current)</span></a>
 
         </ul>
         <form class="form-inline my-2 my-lg-0">
@@ -36,9 +29,10 @@
     </div>
 
     </nav>
-    <ul class="nav nav-tabs">
+    <ul class="nav nav-tabs" id="ul">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Home</a>
+          <a class="nav-link active"  id="home"
+          href="#">Home</a>
         </li>
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -46,14 +40,14 @@
                 Socials
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="https://twitter.com/AllFather_Divya"target = "_blank">Twitter</a>
-                <a class="dropdown-item" href="https://github.com/pythonpeople604" target="_blank">Github</a>
+                <a class="dropdown-item twitter" href="https://twitter.com/AllFather_Divya"target = "_blank">Twitter <i class="fab fa-twitter"></i></a>
+                <a class="dropdown-item github" href="https://github.com/pythonpeople604" target="_blank">Github <i class="fab fa-github"></i></a>
             </div>
         </li>
       </ul>
 
     <div class="container my-3"></div>
-        <h1>Welcome to Magic Notes</h1>
+        <h1 class="h1">Welcome to Magic Notes</h1>
         
 
         <div class="card-body">
@@ -65,7 +59,7 @@
             <div class="form-group">
                 <textarea id='addTxt' class="form-control" id="exampleFormControlTextarea1" placeholder="Add a Note" rows="3"></textarea>
             </div>
-            <button class="btn btn-primary" id="addBtn">Add Note<button\>
+            <button class="btn btn-primary" id="addBtn">Add Note</button>
         </div>
     </div>
 
@@ -79,14 +73,14 @@
       <br>
       <div class="media">
         <p>
-            <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">About Divya Kabra</a>
+            <a id="aboutDK" class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">About Divya Kabra</a>
             
           </p>
           <div class="row">
             <div class="col">
               <div class="collapse multi-collapse" id="multiCollapseExample1">
-                <div class="card card-body">
-                    I am 13-years old boy who is enthusiast of Coding and Gaming. I Want to become a Game Developer. Follow my Socials.
+                <div class="card card-body" id="about">
+                    I am 13-years old boy who is enthusiast of Coding and Gaming. I am a Front - end Developer, Want to become full stack Developer. Follow my Socials.
                   
                 </div>
               </div>
@@ -108,5 +102,6 @@
         crossorigin="anonymous"></script>
     <script src="app.js"></script>
 </body>
+
 
 </html>
